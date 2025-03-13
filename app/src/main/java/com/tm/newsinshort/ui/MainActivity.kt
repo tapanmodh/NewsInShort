@@ -6,6 +6,7 @@ import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.statusBarsPadding
 import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -24,9 +25,12 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             NewsInShortTheme {
-                Surface(modifier = Modifier
-                    .fillMaxSize()
-                    .background(Color.White)) {
+                Surface(
+                    modifier = Modifier
+                        .fillMaxSize()
+                        .statusBarsPadding()
+                        .background(Color.White)
+                ) {
                     AppEntryPoint()
                 }
             }

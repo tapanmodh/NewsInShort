@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">NewsInShort</string>
+    <string name="no_news">No News available\nPlease check in some time!</string>
 </resources>

@@ -69,6 +69,8 @@ dependencies {
 
     implementation(libs.splashScreen)
 
+    implementation(libs.coil)
+
     implementation(project(":utilities"))
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
